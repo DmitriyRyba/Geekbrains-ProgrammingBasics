@@ -1,0 +1,20 @@
+﻿<meta chraset="utf-8">
+<script type="text/javascript">
+	function askQuestion (question, answer, answerCount) {
+		var userAnswer = prompt(question);
+		if (userAnswer.toLowerCase() == answer) {
+			alert('Вы угадали');
+			trueAnswerCount++;
+		}
+		else {
+			alert ('Вы не угадали');
+		}
+	}
+
+	var trueAnswerCount = 0;
+	askQuestion('С когтями, а не птица, летит и матерится', 'электрик', trueAnswerCount);
+	askQuestion('Сто одёжек и все без застежек.', 'капуста', trueAnswerCount);
+
+	alert('Игра окончена! Вы дали ' + trueAnswerCount + ' правильных ответов');
+
+</script>
